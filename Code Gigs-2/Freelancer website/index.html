@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joram Freelancer Web</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <nav>
+            <!--<img src="" alt="" class="logo">-->
+            <ul id="menu-links">
+                <li>Home</li>
+                <li>Services</li>
+                <li>Projects</li> 
+                <li>About Us</li>
+            </ul>
+            <button class="nav-btn">Get started <!--<img src="" alt="">--> </button>
+            <!--  <img src="menu.png" alt="" class="menu-icon" onclick="toogleMenu()">-->
+        </nav>
+
+        <div class="header-content">
+            <div class="header">
+            <h1><span>FREE</span><br><span>LANCER</span></h1>
+            <div class="btn-container">
+
+                <button class="btn-black">Request call back<!--<img src="phone.png">--></button>
+                <button class="btn-white">KNow More<!--<img src="phone.png">--></button>
+
+            </div>
+            <p>Passionate UI/UX designers with 10+ years of experience.</p>
+        </div>
+                
+            <img src="Joe-2.png" alt="" class="user-img">
+        </div>
+
+
+    <script>
+        let navbar = document.querySelector('nav');
+        let menuLinks = document.getElementById("menu-links");
+
+        function toogleMenu(){
+            menuLinks.classList.toogle('show-menu');
+        }
+
+
+        window.onscroll = function() {
+            if(window.scrollY > 0) {
+                navbar.style.background = '#eefff9';
+        }else{
+            navbar.style.background = 'transparent';
+            };
+            
+        }
+
+    </script>
+
+    </body>
+</html>
